@@ -47,7 +47,7 @@ jobs:
           name: dist-files
           path: mini-curso-devops/dist
 
-  deploy-s3:   # ✅ dentro de jobs, no mesmo nível de build-s3
+  deploy-s3:   
     runs-on: ubuntu-latest
     needs: build-s3
     permissions:
