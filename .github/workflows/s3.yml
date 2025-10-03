@@ -54,9 +54,7 @@ jobs:
           path: mini-curso-devops/dist
 
 
-
-
-    deploy-s3: 
+deploy-s3: 
           runs-on: ubuntu-latest
           needs: build-s3
           permissions:
@@ -78,4 +76,4 @@ jobs:
           - name: Copia de arquivos para S3 e faz o SYNC
             run: |
               set -e 
-              aws s3 sync mini-curso-devops/dist/ s3://$S3_NAME --delete --region $AWS_REGION
+              aws s3 sync mini-curso-devops/dist s3://$S3_NAME --delete --region $AWS_REGION
