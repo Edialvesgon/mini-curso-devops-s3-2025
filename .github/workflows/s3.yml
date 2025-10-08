@@ -80,7 +80,7 @@ on:
 
 env:
   AWS_REGION: 'us-east-1'
-  S3_NAME: "mini-curso-devops"
+  S3_NAME: "mini-curso-devps-2025-eag"
   S3_PREFIX: "/"
   AWS_WEB_IDENTITY_TOKEN_FILE: "/tmp/gitlab_token"
 
